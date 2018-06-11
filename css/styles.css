@@ -643,7 +643,8 @@ footer h1 {
 .one_continer {
   height: auto;
   width: 100%;
-  justify-content: space-between; }
+  justify-content: space-between;
+  display: flex; }
 
 .underside_overskrift {
   color: #0097d7;
@@ -651,7 +652,7 @@ footer h1 {
 
 .underside_billde {
   height: 80%;
-  width: 40%;
+  width: auto;
   flex-direction: row;
   display: flex;
   margin-left: 80px;
@@ -1141,30 +1142,39 @@ button {
     grid-row: 7;
     background-color: #ebf1f3; }
 
-  .footer_samarbejde {
-    margin-bottom: 0px;
-    align-content: center; }
-
-  .sam3 {
-    margin-bottom: 5px; }
-
-  footer {
-    grid-row: 8;
-    background-image: url("../images/1mobilbaggrund.png");
-    background-position: center;
-    background-size: cover; }
-
-  .sarah_some {
-    display: none; }
-
-  .underside_beskrivelse {
+  .indhold_contaon {
     height: auto;
-    width: 40%; }
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-direction: row; }
 
-  .entext {
-    margin-left: 22%; }
-
-  .from {
-    width: 100%; } }
+  .lortebillede {
+    flex-direction: row;
+    display: inline-flex;
+    height: 90%;
+    width: auto;
+    float: right;
+    padding-top: 80px;
+    display: block; }
+    .lortebillede .footer_samarbejde {
+      margin-bottom: 0px;
+      align-content: center; }
+    .lortebillede .sam3 {
+      margin-bottom: 5px; }
+    .lortebillede footer {
+      grid-row: 8;
+      background-image: url("../images/1mobilbaggrund.png");
+      background-position: center;
+      background-size: cover; }
+    .lortebillede .sarah_some {
+      display: none; }
+    .lortebillede .underside_beskrivelse {
+      height: auto;
+      width: 40%; }
+    .lortebillede .entext {
+      margin-left: 22%; }
+    .lortebillede .from {
+      width: 100%; } }
 
 /*# sourceMappingURL=styles.css.map */
