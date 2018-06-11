@@ -579,18 +579,18 @@ footer h1 {
 
 .indhold_contaon {
   height: auto;
-  width: 80%;
   justify-content: space-between;
-  margin: auto; }
+  margin: auto;
+  display: flex;
+  flex-direction: column; }
 
 .lortebillede {
   flex-direction: row;
   display: inline-flex;
-  height: 60%;
-  width: 50%;
+  height: 90%;
+  width: auto;
   float: right;
   padding-top: 80px;
-  padding-left: 80px;
   display: block; }
 
 .tilmeld_text {
@@ -598,6 +598,10 @@ footer h1 {
   display: inline-flex;
   height: 100%;
   width: 50%; }
+
+.til_knap {
+  justify-content: center;
+  text-align: center; }
 
 .medlem1 {
   height: auto;

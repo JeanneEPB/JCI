@@ -707,19 +707,19 @@ footer h1 {
 
 .indhold_contaon {
   height: auto;
-  width: 80%;
   justify-content: space-between;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .lortebillede {
   flex-direction: row;
   display: inline-flex;
-  height: 60%;
-  width: 50%;
+  height: 90%;
+  width: auto;
   float: right;
   padding-top: 80px;
-  padding-left: 80px;
   display: block;
 }
 
@@ -728,6 +728,11 @@ footer h1 {
   display: inline-flex;
   height: 100%;
   width: 50%;
+}
+
+.til_knap {
+  justify-content: center;
+  text-align: center;
 }
 
 .medlem1 {
@@ -782,6 +787,7 @@ footer h1 {
   height: auto;
   width: 100%;
   justify-content: space-between;
+  display: flex;
 }
 
 .underside_overskrift {
@@ -791,7 +797,7 @@ footer h1 {
 
 .underside_billde {
   height: 80%;
-  width: 40%;
+  width: auto;
   flex-direction: row;
   display: flex;
   margin-left: 80px;
@@ -1407,6 +1413,22 @@ button {
       background-color: $graa;
     }
 
+    .indhold_contaon {
+      height: auto;
+      justify-content: space-between;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .lortebillede {
+      flex-direction: row;
+      display: inline-flex;
+      height: 90%;
+      width: auto;
+      float: right;
+      padding-top: 80px;
+      display: block;
     .footer_samarbejde {
       margin-bottom: 0px;
       align-content: center;
@@ -1444,8 +1466,6 @@ button {
   }
 
 // SARAH KODE SLUT ==============================================
-
-
 
 
 
