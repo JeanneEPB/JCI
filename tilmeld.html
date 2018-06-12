@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
@@ -95,83 +96,83 @@
 
 
 
-            <div class="underside_beskrivelse">
-                <p>
-                    Hos JCI Slagelse får du mulighed for at komme med i et internationalt netværk i et lokalt miljø. <br> <br>
-                    Du får mulighed for at deltage i 3 gratis arrangementer, og efterfølgende kan du tage stilling til, om du ønsker at være medlem.<br> <br> Efter din tilmelding, bliver du tilknyttet en mentor.
-                    Som medlem af os, kan du komme til valgfrie arrangementer og kurser det første år.<br> <br>
-                    Dit indmeldingsgebyr dækker over arrangementer og trainings det første år.
-                </p>
+        <div class="underside_beskrivelse">
+            <p>
+                Hos JCI Slagelse får du mulighed for at komme med i et internationalt netværk i et lokalt miljø. <br> <br>
+                Du får mulighed for at deltage i 3 gratis arrangementer, og efterfølgende kan du tage stilling til, om du ønsker at være medlem.<br> <br> Efter din tilmelding, bliver du tilknyttet en mentor.
+                Som medlem af os, kan du komme til valgfrie arrangementer og kurser det første år.<br> <br>
+                Dit indmeldingsgebyr dækker over arrangementer og trainings det første år.
+            </p>
+        </div>
+
+        <div class="underside_billde">
+            <div class="blaa_boble">
+                <h2>1.000,-</h2><p>INDMELDELSESGEBYR <br> <br>
+                Kan bruges på at deltage i forskellige arrangementer
+                eller trainings indenfor dit første medlemsår.</p>
+            </div>
+            <div class="orange_boble">
+                <h2>1.500,-</h2><p>PR. HALVÅR</p>
+            </div>
+            <div class="turkis_boble">
+                <p>STUDERENDE:</p><h2>995,-</h2><p>PR. HALVÅR</p>
             </div>
 
-            <div class="underside_billde">
-                <div class="blaa_boble">
-                    <h2>1.000,-</h2><p>INDMELDELSESGEBYR <br> <br>
-                    Kan bruges på at deltage i forskellige arrangementer
-                    eller trainings indenfor dit første medlemsår.</p>
-                </div>
-                <div class="orange_boble">
-                    <h2>1.500,-</h2><p>PR. HALVÅR</p>
-                </div>
-                <div class="turkis_boble">
-                    <p>STUDERENDE:</p><h2>995,-</h2><p>PR. HALVÅR</p>
-                </div>
-
         </div>
 
     </div>
 
-<div class="from">
+    <div class="from">
 
-    <div class="entext">
+        <div class="entext">
 
-        <p>
-            Udfyld formularen herunder
-        </p>
+            <p>
+                Udfyld formularen herunder
+            </p>
 
+        </div>
+
+
+        <form>
+
+            <div id="from">
+                <label for="firstname" id="firstnametext">FORNAVN:</label>
+                <input type="text" id="firstname" name="user_name">
+            </div>
+
+            <div id="2from">
+                <label for="lastname">EFTERNAVN:</label>
+                <input type="text" id="lastname" name="user_lastname">
+            </div>
+
+            <div id="3from">
+                <label for="adresse">ADRESSE:</label>
+                <input type="text" id="adresse" name="user_adresse">
+            </div>
+
+            <div id="4from">
+                <label for="postnummer">POSTNUMMER:</label>
+                <input type="text" id="postnummer" name="user_postnummer">
+            </div>
+
+            <div id="5from">
+                <label for="by">BY:</label>
+                <input type="text" id="by" name="user_by">
+            </div>
+
+            <div id="6from">
+                <label for="tlf">TLF:</label>
+                <input type="text" id="tlf" name="user_tlf">
+            </div>
+
+            <div id="7from">
+                <label for="mail">MAIL:</label>
+                <input type="text" id="mail" name="user_mail">
+            </div>
+
+
+        </form>
     </div>
-
-
-    <form>
-
-        <div id="from">
-            <label for="firstname" id="firstnametext">FORNAVN:</label>
-            <input type="text" id="firstname" name="user_name">
-        </div>
-
-        <div id="2from">
-            <label for="lastname">EFTERNAVN:</label>
-            <input type="text" id="lastname" name="user_lastname">
-        </div>
-
-        <div id="3from">
-            <label for="adresse">ADRESSE:</label>
-            <input type="text" id="adresse" name="user_adresse">
-        </div>
-
-        <div id="4from">
-            <label for="postnummer">POSTNUMMER:</label>
-            <input type="text" id="postnummer" name="user_postnummer">
-        </div>
-
-        <div id="5from">
-            <label for="by">BY:</label>
-            <input type="text" id="by" name="user_by">
-        </div>
-
-        <div id="6from">
-            <label for="tlf">TLF:</label>
-            <input type="text" id="tlf" name="user_tlf">
-        </div>
-
-        <div id="7from">
-            <label for="mail">MAIL:</label>
-            <input type="text" id="mail" name="user_mail">
-        </div>
-
-
-    </form>
-</div>
     <form action="/action_page.php" method="get">
         <input type="checkbox" name="studerende" value="ja">STUDERENDE
 
@@ -358,7 +359,7 @@
         // Din kode her
         $('.til_knap').on('click', function () {
 
-            alert("Tak for din indmeldelse. Du vil få en bekraftigelse på den indtastede mail");
+            alert("Tak for din indmeldelse. Du vil modtage en bekræftigelse på den indtastede mail.");
         })
     });
 </script>
