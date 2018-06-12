@@ -844,7 +844,7 @@ button {
     font-family: 'Montserrat', sans-serif; }
 
   a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 12px; }
 
@@ -872,6 +872,9 @@ button {
     margin-left: 20%;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold; }
+
+  .menu_web a {
+    color: black; }
 
   .dropdown {
     display: none; }
@@ -1186,7 +1189,8 @@ button {
 
   .medlemskab {
     grid-row: 7;
-    background-color: #ebf1f3; }
+    background-color: #ebf1f3;
+    justify-items: center; }
 
   .indhold_contaon {
     height: auto;
