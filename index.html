@@ -331,30 +331,48 @@ BBb
 
 
 <section class="projekter">
-<a name="target_projekter"></a>
+    <a name="target_projekter"></a>
 
     <h1 class="Projekter_overskrift">PROJEKTER</h1>
 
-
     <div class="projekter_projekter">
 
-        <a><div class="den_gyldne_mikrofon"></div></a>
+        <div id="den_gyldne_mikrofon">
+            <h2>DEN GYLDNE <br> MIKROFON</h2>
+            <p>Hvert år afholdes Den Gyldne Mikrofon,
+            som er en enmands talerkonkurrence alle medlemmer har
+            mulighed for at deltage. Ud fra et defineret emne, skal
+            deltageren holde en tale i 5 minutter, som bliver vurderet
+            af dommerpanelet. Konkurrencen bliver endeligt afgjort ved
+            verdensfinalen, hvor vinderen får en betalt tur til
+            Europakongressen. Få erfaring med at tale foran et publikum,
+            og føl dig tryg i situationen.</p></div>
 
-        <a href="http://www.grangia.dk/"><div class="grangia_erhvervspris"></div></a>
+        <a href="http://www.grangia.dk/"><div id="grangia">
+            <h2>GRANGIA <br> ERHVERVSPRIS</h2>
+            <p>Grangia erhvervspris er en pris JCI Slagelse arrangerer og
+            uddeler til en erhvervsdrivende ung og handlekraftig
+            person, der har gjort en forskel og sat Slagelse på
+            landkortet. Alle kan indgive en person de synes er egnet,
+            men der er visse kriterier til vinderen. Grangia
+            erhvervspris er også med til at træne medlemmernes
+            projektstyringsevner og samarbejde i et team af dedikeret
+            personer. Hvert projekt har en projektleder, hvor et
+            ekstra dedikeret medlem kan teste sine evner som leder
+            af et projekt. Klik for at læse mere.</p></div></a>
 
-        <a><div class="snak_saa_debatter"></div></a>
+        <div id="snak_saa_debatter">
+            <h2>SNAK SÅ <br> DE'BATTER</h2>
+            <p>Snak Så De’batter er JCI’s
+            Danmarks nationale debatkonkurrence, hvor de lokale
+            afdelinger fra hele landet konkurrerer mod hinanden.
+            Et hold består af 3, som skal debattere for eller imod
+            et givent emne. Konkurrencen træner argumentations- og
+            præsentationsteknik, udfordringer der skærper dine
+                færdigheder inden for debattering.</p></div>
 
     </div>
 
-    <div class="projekter_projekter_mobile">
-
-        <img src="images/den_gyldne_mikrofon.jpg">
-
-        <a href="http://www.grangia.dk/"><img src="images/grangia.jpg"></a>
-
-        <img src="images/snak_saa_debatter_2.jpg">
-
-    </div>
 </section>
 
 
@@ -378,10 +396,18 @@ BBb
         </p>
     </div>
     <div class="lortebillede">
-        <img src="images/Bobler.png">
+        <div class="blaa_boble">
+            <h2>1.000,-</h2><p>INDMELDELSESGEBYR <br> <br>
+        Kan bruges på at deltage i forskellige arrangementer
+        eller trainings indenfor dit første medlemsår.</p>
+        </div>
+        <div class="orange_boble">
+            <h2>1.500,-</h2><p>PR. HALVÅR</p>
+        </div>
+        <div class="turkis_boble">
+            <p>STUDERENDE:</p><h2>995,-</h2><p>PR. HALVÅR</p>
+        </div>
     </div>
-
-
 
 </div>
 
@@ -396,8 +422,6 @@ BBb
             </button>
         </a>
     </div>
-
-
 
 </section>
 
@@ -543,15 +567,15 @@ BBb
 
 
         <div class="sam1">
-            <img src="images/logo1.png">
+            <a href="https://www.sparnord.dk/"> <img src="images/logo1.png"></a>
         </div>
 
         <div class="sam2">
-            <img src="images/logo2.png">
+            <a href="https://www.dit-slagelse.dk/"><img src="images/logo2.png"></a>
         </div>
 
         <div class="sam3">
-            <img src="images/logo3.png">
+            <a href="https://www.theupperhill.dk/"><img src="images/logo3.png"></a>
         </div>
 
     </div>
@@ -594,6 +618,8 @@ BBb
 </div>
 
 
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
 
 
@@ -614,8 +640,50 @@ BBb
         });
 
             </script>
-<!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+<script>
+    $(document).ready(function (e) {
+
+        $("div#den_gyldne_mikrofon").hover(
+            function (e) {
+            $(this).animate({"height":"430px","width":"400px","padding":"30px 40px 40px 40px"});
+            $("div#den_gyldne_mikrofon p").animate({"font-size":"10pt","line-height":"18pt"});
+            $("div#den_gyldne_mikrofon h2").animate({"font-size":"20pt"});
+        }, (function () {
+            $(this).animate({"height":"350","width":"330px","padding":"20px 30px 30px 30px"});
+            $("div#den_gyldne_mikrofon p").animate({"font-size":"9pt","line-height":"14pt"});
+            $("div#den_gyldne_mikrofon h2").animate({"font-size":"15pt"});
+        }));
+
+        $("div#grangia").hover(
+            function (e) {
+            $(this).animate({"height":"430px","width":"400px","padding":"30px 40px 40px 40px"});
+            $("div#grangia p").animate({"font-size":"10pt","line-height":"18pt"});
+            $("div#grangia h2").animate({"font-size":"20pt"});
+        }, (function () {
+            $(this).animate({"height":"350","width":"330px","padding":"20px 30px 30px 30px"});
+            $("div#grangia p").animate({"font-size":"9pt","line-height":"14pt"});
+            $("div#grangia h2").animate({"font-size":"15pt"});
+        }));
+
+        $("div#snak_saa_debatter").hover(
+            function (e) {
+            $(this).animate({"height":"430px","width":"400px","padding":"30px 40px 40px 40px"});
+            $("div#snak_saa_debatter p").animate({"font-size":"10pt","line-height":"18pt"});
+            $("div#snak_saa_debatter h2").animate({"font-size":"20pt"});
+        }, (function () {
+            $(this).animate({"height":"350","width":"330px","padding":"20px 30px 30px 30px"});
+            $("div#snak_saa_debatter p").animate({"font-size":"9pt","line-height":"14pt"});
+            $("div#snak_saa_debatter h2").animate({"font-size":"15pt"});
+        }));
+
+    });
+</script>
+
+
+
+
 
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 <script type="text/javascript">
