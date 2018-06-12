@@ -35,7 +35,8 @@ p {
   padding: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
 
 ul, ol {
   margin: 0;
@@ -177,11 +178,25 @@ header {
   padding-top: 70px; }
 
 .knap_container {
-  height: auto;
-  width: 100%;
-  justify-content: center;
   display: flex;
-  margin-top: 60px; }
+  justify-content: space-around;
+  padding-top: 40px; }
+
+.medlemskab_knap {
+  background-color: #f37121;
+  margin-top: 2%;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  height: 50px;
+  width: 220px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center; }
+
+.medlemskab_knap h3 {
+  line-height: 1pt; }
 
 .text1 {
   color: black;
@@ -365,13 +380,6 @@ a:hover {
   height: 350px;
   width: 330px;
   padding: 20px 40px 40px 40px; }
-
-.medlemskab_knap {
-  background-color: #f37121;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  *margin-bottom: 30px; }
 
 footer {
   grid-row: 7;
@@ -602,7 +610,8 @@ footer h1 {
 .indhold_contaon {
   height: auto;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center; }
 
 .tilmeld_text {
   flex-direction: row;
@@ -672,9 +681,27 @@ footer h1 {
 .turkis_boble p {
   line-height: 10pt; }
 
+.til_knap_container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 40px; }
+
 .til_knap {
-  justify-content: center;
+  background-color: #f37121;
+  margin-top: 2%;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  height: 50px;
+  width: 220px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
   text-align: center; }
+
+.til_knap h3 {
+  line-height: 1pt; }
 
 .medlem1 {
   height: auto;
@@ -1289,7 +1316,7 @@ button {
     margin-left: 30px; }
 
   .one_continer {
-    height: auto;
+    height: 500px;
     width: 100%;
     flex-direction: row;
     display: flex; }

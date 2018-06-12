@@ -177,16 +177,17 @@
 
     </form>
 
-    <div class="til_knap"><button>
+    <div class="til_knap_container">
 
+            <button class="til_knap">
 
-      <p>
-          BLIV MEDLEM
-      </p>
+              <h3>
+                  BLIV MEDLEM
+              </h3>
 
+            </button>
 
-    </button></div>
-
+    </div>
 
 
 
@@ -355,7 +356,7 @@
 <script>
     $(document).ready(function (e) {
         // Din kode her
-        $('button').on('click', function () {
+        $('.til_knap').on('click', function () {
 
             alert("Tak for din indmeldelse. Du vil få en bekraftigelse på den indtastede mail");
         })

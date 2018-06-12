@@ -52,6 +52,7 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 ul, ol {
@@ -224,11 +225,27 @@ line-height: 10pt;
 }
 
 .knap_container {
-  height: auto;
-  width: 100%;
-  justify-content: center;
   display: flex;
-  margin-top: 60px;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.medlemskab_knap {
+  background-color: #f37121;
+  margin-top: 2%;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  height: 50px;
+  width: 220px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.medlemskab_knap h3 {
+  line-height: 1pt;
 }
 
   .text1 {
@@ -448,14 +465,6 @@ line-height: 10pt;
 
 
 // SARAH KODE ==================================================
-
-.medlemskab_knap {
-  background-color: $orange;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  *margin-bottom: 30px;
-}
 
 footer {
   grid-row: 7;
@@ -731,6 +740,7 @@ footer h1 {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .tilmeld_text {
@@ -816,9 +826,29 @@ footer h1 {
   line-height: 10pt;
 }
 
+.til_knap_container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
 .til_knap {
-  justify-content: center;
+  background-color: #f37121;
+  margin-top: 2%;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  height: 50px;
+  width: 220px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
   text-align: center;
+}
+
+.til_knap h3 {
+  line-height: 1pt;
 }
 
 .medlem1 {
@@ -1577,6 +1607,8 @@ button {
 
 // TILMELD SIDE ==============================================
 
+
+
   .underside_beskrivelse{
     height: auto;
     width: 40%;
@@ -1584,7 +1616,7 @@ button {
   }
 
     .one_continer {
-      height: auto;
+      height: 500px;
       width: 100%;
       flex-direction: row;
       display: flex;
