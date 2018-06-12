@@ -13,7 +13,7 @@ $graa: #ebf1f3;
 body {
   display: grid;
   margin: 0;
-  grid-template-rows: 85px 1200px 1050px 1300px auto auto auto 230px;
+  grid-template-rows: 85px 1200px 1150px 1300px auto auto auto 230px;
 
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
- font-size: 45pt;
+ font-size: 30pt;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-align: center;
@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-size: 25pt;
+  font-size: 18pt;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -50,7 +50,9 @@ p {
   padding: 0; // Ingen indre margen fra paragraffer
 }
 
-
+a {
+  text-decoration: none;
+}
 
 ul, ol {
   margin: 0; // Ingen ydre margen fra lister
@@ -160,7 +162,7 @@ header {
   background-image: url("../images/home.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  *background-size: cover;
+  background-size: cover;
 }
 
 .flex-container {
@@ -203,7 +205,7 @@ header {
   background-color: white;
   text-align: center;
   color: #0097d7;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   padding-top: 60px;
 
@@ -219,13 +221,6 @@ header {
   margin: 0 auto;
 line-height: 10pt;
   padding-top: 70px;
-}
-
-.tilmeld_text{
-  height: auto;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 80px;
 }
 
 .knap_container {
@@ -387,35 +382,66 @@ line-height: 10pt;
       display: none;
     }
 
-    .projekter {
-      grid-row: 5;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
-    }
+  .projekter {
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
 
-    .projekter h2 {
-      text-align: center;
-      color: white;
-    }
+.projekter h2 {
+  text-align: center;
+  color: white;
+  font-size: 15pt;
+}
 
-    .Projekter_overskrift {
-      grid-row: 1;
-    }
+.projekter p {
+  font-size: 9pt;
+  line-height: 14pt;
+}
 
-    .projekter_projekter {
-      display: none;
-    }
+  .Projekter_overskrift {
+    grid-row: 1;
+  }
 
-    .projekter_projekter_mobile {
-      grid-row: 2;
-      display: grid;
-      grid-template-rows: auto auto auto 70px;
-      grid-template-columns: 1fr;
-      grid-row-gap: 20px;
-      justify-items: center;
-    }
+  .projekter_projekter {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: auto auto auto 70px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 0 10% 0 10%;
+  }
 
+
+  #den_gyldne_mikrofon {
+    grid-row: 1;
+    background-color: $turkis;
+    color: white;
+    height: 350px;
+    width: 330px;
+    padding: 20px 40px 40px 40px;
+  }
+
+  #grangia {
+    grid-row: 2;
+    background-color: $blaa;
+    color: white;
+    height: 350px;
+    width: 330px;
+    padding: 20px 40px 40px 40px;
+  }
+
+  #snak_saa_debatter {
+    grid-row: 3;
+    background-color: $turkis;
+    color: white;
+    height: 350px;
+    width: 330px;
+    padding: 20px 40px 40px 40px;
+  }
 
 
 
@@ -429,10 +455,6 @@ line-height: 10pt;
   padding: 10px;
   border-radius: 10px;
   *margin-bottom: 30px;
-}
-
-.lortebillede {
-  display: none;
 }
 
 footer {
@@ -707,27 +729,91 @@ footer h1 {
 
 .indhold_contaon {
   height: auto;
-  justify-content: space-between;
-  margin: auto;
   display: flex;
   flex-direction: column;
-}
-
-.lortebillede {
-  flex-direction: row;
-  display: inline-flex;
-  height: 90%;
-  width: auto;
-  float: right;
-  padding-top: 80px;
-  display: block;
 }
 
 .tilmeld_text {
   flex-direction: row;
   display: inline-flex;
-  height: 100%;
-  width: 50%;
+  width: 70%;
+  height: auto;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.lortebillede {
+  width: auto;
+  display: block;
+  position: relative;
+  height: 80vw;
+}
+
+.lortebillede h2 {
+  color: white;
+  line-height: 13pt;
+}
+
+.lortebillede p {
+  color: white;
+  font-size: 10pt;
+}
+
+.blaa_boble {
+  display: flex;
+  z-index: 10;
+  background-color: $blaa;
+  border-radius: 50%;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  top: 40px;
+
+  height: 65vw;
+  width: 65vw;
+}
+
+.blaa_boble p {
+  padding: 0 10vw 0 10vw;
+}
+
+.orange_boble {
+  display: flex;
+  z-index: 11;
+  background-color: $orange;
+  border-radius: 50%;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  right: 5px;
+
+  height: 40vw;
+  width: 40vw;
+}
+
+.turkis_boble {
+  display: flex;
+  z-index: 12;
+  background-color: $turkis;
+  border-radius: 50%;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  right: 5vw;
+  bottom: 20px;
+
+  height: 30vw;
+  width: 30vw;
+}
+
+.turkis_boble p {
+  line-height: 10pt;
 }
 
 .til_knap {
@@ -786,7 +872,8 @@ footer h1 {
 .one_continer {
   height: auto;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   display: flex;
 }
 
@@ -796,31 +883,20 @@ footer h1 {
 }
 
 .underside_billde {
-  height: 80%;
-  width: auto;
-  flex-direction: row;
-  display: flex;
-  margin-left: 80px;
-  margin-right: -80px;
-}
-
-.underside_beskrivelse {
-}
-
-.underside_text {
-  height: auto;
+  height: 80vw;
   width: 100%;
-  flex-direction: row;
   display: flex;
+  color: white;
+  position: relative;
+}
+
+.underside_billde p {
+  font-size: 10pt;
 }
 
 #section_tilmeld {
   grid-row: 2;
   background-color: white;
-}
-
-.underside_billde {
-  margin-left: 15%;
 }
 
 .underside_overskrift {
@@ -950,7 +1026,7 @@ button {
     body {
       display: grid;
       margin: 0;
-      grid-template-rows: 85px 690px 800px 765px 770px auto 750px 750px;
+      grid-template-rows: 85px 690px 800px 765px 770px auto 850px 750px;
     }
 
     h1 {
@@ -980,7 +1056,6 @@ button {
       color: black;
       text-decoration: none;
       font-size: 12px;
-      font-weight: bold;
     }
 
     .lillelogo {
@@ -1311,30 +1386,30 @@ button {
       grid-row: 6;
       display: grid;
       grid-template-rows: auto auto 90px;
-      grid-template-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 8fr 1fr;
     }
 
     .projekter h2 {
       text-align: center;
       color: white;
-      font-size: 20pt;
+      font-size: 15pt;
+    }
+
+    .projekter p {
+      font-size: 9pt;
+      line-height: 14pt;
     }
 
     .projekter_projekter {
       grid-row: 2;
       grid-column: 2;
       display: grid;
-      grid-template-rows: 460px;
+      grid-template-rows: 500px;
       grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 10px;
       justify-items: center;
-    }
-
-    .projekter_projekter a {
-      align-self: center;
-    }
-
-    .projekter_projekter_mobile {
-      display: none;
+      align-items: center;
+      padding: 0 0 0 0;
     }
 
     .Projekter_overskrift {
@@ -1343,65 +1418,36 @@ button {
       padding-top: 60px;
     }
 
-    .den_gyldne_mikrofon {
+    #den_gyldne_mikrofon {
+      grid-row: 1;
       grid-column: 1;
-      background: url("../images/den_gyldne_mikrofon.jpg") center;
-      background-size: cover;
-      margin: 0 10px 0 0;
-      padding: 0 0 0 0;
-
+      background-color: $turkis;
+      color: white;
       height: 350px;
-      width: 332px;
-      transition: .5s ease;
+      width: 330px;
+      padding: 20px 30px 30px 30px;
     }
 
-    .den_gyldne_mikrofon:hover {
-      margin: 0 0 0 0;
-
-      height: 460px;
-      width: 442px;
-      transition: .5s ease;
-    }
-
-    .grangia_erhvervspris {
+    #grangia {
+      grid-row: 1;
       grid-column: 2;
-      background: url("../images/grangia.jpg") center;
-      background-size: cover;
-      margin: 0 10px 0 10px;
-      padding: 0 0 0 0;
-
+      background-color: $blaa;
+      color: white;
       height: 350px;
-      width: 332px;
-      transition: .5s ease;
+      width: 330px;
+      padding: 20px 30px 30px 30px;
     }
 
-    .grangia_erhvervspris:hover {
-      margin: 0 0 0 0;
-
-      height: 460px;
-      width: 442px;
-      transition: .5s ease;
-    }
-
-    .snak_saa_debatter {
+    #snak_saa_debatter {
+      grid-row: 1;
       grid-column: 3;
-      background: url("../images/snak_saa_debatter_2.jpg") center;
-      background-size: cover;
-      margin: 0 0 0 10px;
-      padding: 0 0 0 0;
-
+      background-color: $turkis;
+      color: white;
       height: 350px;
-      width: 332px;
-      transition: .5s ease;
+      width: 330px;
+      padding: 20px 30px 30px 30px;
     }
 
-    .snak_saa_debatter:hover {
-      margin: 0 0 0 0;
-
-      height: 460px;
-      width: 442px;
-      transition: .5s ease;
-    }
 
 
 
@@ -1415,20 +1461,95 @@ button {
 
     .indhold_contaon {
       height: auto;
-      justify-content: space-between;
-      margin: auto;
+      width: 100%;
       display: flex;
       flex-direction: row;
     }
 
-    .lortebillede {
+    .tilmeld_text {
       flex-direction: row;
       display: inline-flex;
-      height: 90%;
-      width: auto;
-      float: right;
-      padding-top: 80px;
+      width: 30%;
+      height: auto;
+      margin-top: 80px;
+      margin-left: 30px;
+    }
+
+    .lortebillede {
+      width: 60%;
       display: block;
+      position: relative;
+      height: 470px;
+    }
+
+    .lortebillede h2 {
+      color: white;
+      line-height: 15pt;
+    }
+
+    .lortebillede p {
+      color: white;
+      font-size: 14pt;
+    }
+
+    .blaa_boble {
+      display: flex;
+      z-index: 10;
+      background-color: $blaa;
+      border-radius: 50%;
+      position: absolute;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding: 0 20px 0 20px;
+
+      top: 40px;
+
+      height: 30vw;
+      width: 30vw;
+    }
+
+    .blaa_boble p {
+      padding: 0 0 0 0;
+    }
+
+    .orange_boble {
+      display: flex;
+      z-index: 11;
+      background-color: $orange;
+      border-radius: 50%;
+      position: absolute;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+
+      left: 45%;
+
+      height: 22vw;
+      width: 22vw;
+    }
+
+    .turkis_boble {
+      display: flex;
+      z-index: 12;
+      background-color: $turkis;
+      border-radius: 50%;
+      position: absolute;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+
+      right: 5vw;
+      bottom: -20px;
+
+      height: 17vw;
+      width: 17vw;
+    }
+
+    .turkis_boble p {
+      line-height: 10pt;
+    }
+
     .footer_samarbejde {
       margin-bottom: 0px;
       align-content: center;
@@ -1454,11 +1575,27 @@ button {
   .underside_beskrivelse{
     height: auto;
     width: 40%;
+    margin-left: 30px;
   }
 
-  .entext{
-    margin-left: 22%;
-  }
+    .one_continer {
+      height: auto;
+      width: 100%;
+      flex-direction: row;
+      display: flex;
+    }
+
+    .underside_billde {
+      height: 400px;
+      width: 70%;
+      display: flex;
+      color: white;
+      position: relative;
+    }
+
+    .underside_billde p {
+      font-size: 12pt;
+    }
 
   .from{
     width: 100%;
@@ -1477,4 +1614,4 @@ button {
 
 @media print {
   // Alt der gælder for print specifikt
-}}
+}
