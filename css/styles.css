@@ -5,7 +5,7 @@
 body {
   display: grid;
   margin: 0;
-  grid-template-rows: 85px 1200px 1150px 1300px auto auto auto 230px; }
+  grid-template-rows: 85px 1300px 1150px 1300px auto auto auto 230px; }
 
 .body_tilmeld {
   display: grid;
@@ -30,7 +30,7 @@ h3 {
 p {
   font-size: 12pt;
   line-height: 20pt;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -65,7 +65,7 @@ img {
   width: 100%;
   position: relative;
   display: inline-block;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   *background-color: aqua;
   height: 100px; }
 
@@ -195,7 +195,7 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   color: #0097d7;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center; }
 
 .flex-container2 img {
@@ -254,7 +254,7 @@ a:hover {
   color: white;
   font-size: 20px;
   border: none;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 .fb {
   margin-top: 10px;
@@ -265,7 +265,7 @@ a:hover {
   color: white;
   font-size: 20px;
   border: none;
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 #return-to-top {
   position: fixed;
@@ -326,7 +326,7 @@ a:hover {
   font-size: 15pt; }
 
 .projekter p {
-  font-size: 9pt;
+  font-size: 8pt;
   line-height: 14pt; }
 
 .Projekter_overskrift {
@@ -841,7 +841,7 @@ button {
   p {
     font-size: 10pt;
     line-height: 20pt;
-    font-family: 'Lato', sans-serif; }
+    font-family: 'Montserrat', sans-serif; }
 
   a {
     color: black;
@@ -907,7 +907,7 @@ button {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #0097d7; }
 
   .flex-container3 {
@@ -1138,7 +1138,7 @@ button {
     font-size: 15pt; }
 
   .projekter p {
-    font-size: 9pt;
+    font-size: 8pt;
     line-height: 14pt; }
 
   .projekter_projekter {
